@@ -113,3 +113,36 @@ Github is for social coding: if you want to write code, we encourage contributio
 Before we accept a non-trivial patch or pull request we will need you to sign the contributor's agreement (see https://support.springsource.com/spring_committer_signup). 
 Signing the contributor's agreement does not grant anyone commit rights to the main repository, but it does mean that we can accept your contributions, and you will get an author credit if we do. 
 Active contributors might be asked to join the core team, and given the ability to merge pull requests.
+--------------------------------------------------------------------------------------------------------------
+
+Spring.NET REST Client 是一个轻量级的库 (~60k-80k) 不依赖于 Spring.NET 框架，可独立使用。
+
+Spring.NET REST Client 包含:
+
+·RestTemplate 类用于客户端访问 RESTful 服务 
+·一组 HTTP 消息转换器用于将 .NET 对象转成 HTTP 请求内容中，以及将HTTP回应的内容转成对象。
+
+Spring.NET REST Client项目发行说明：
+
+* "bin" contains the distribution dll files.
+* "doc" contains reference documentation and MSDN-style API help.
+* "examples" contains sample applications.
+* "lib" contains common libraries needed for building and running the framework.
+* "src" contains the C# source files for the framework.
+* "test" contains the C# source files for the test suite.
+
+DISTRIBUTION DLLs
+
+The "bin" directory contains the following distinct dll files for use in applications. 
+Dependencies are those other than on the .NET BCL.
+
+* "Spring.Rest" for all supported Framework versions
+* Dependencies: Common.Logging for .NET 2.0, 3.5 and 4.0
+
+* "Spring.Http.Converters.NJson" for all supported Framework versions
+* Dependencies: Newtonsoft.Json
+
+* "Spring.Http.Converters.Xml.Linq" for Silverlight
+* "Spring.Http.Converters.Feed" for Silverlight
+
+Debug build is done using /DEBUG:full and release build using /DEBUG:pdbonly flags.
